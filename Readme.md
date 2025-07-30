@@ -9,6 +9,9 @@ This is a tutorial React repository to document my React learnings
 
 ## To be Added
 - Non-local storage so favorites can be stored indefinitely
+- Add ratings to the movie
+- Add pages to the bottom of the website
+- Add Sections for TV Shows, include also the ratings and pages section
 
 # Main Notes
 ## Creating a Project
