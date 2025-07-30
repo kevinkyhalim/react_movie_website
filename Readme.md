@@ -1,37 +1,35 @@
 # React Movie Website Tutorial
 
-React uses javascript
+This is a tutorial React repository to document my React learnings
 
-.jsx
+## Features
+- API call to TMDB to show latest popular movies
+- API call to TMDB to filter movies based on a query
+- Favorites tab to show favorited movies
 
+## To be Added
+- Non-local storage so favorites can be stored indefinitely
 
-https://react.dev
-
-Everything revolves around "components" that are modular. That can be reused and combined!
-Component here means ANY function in JavaScript that returns some kind of JSX code, always start with a CAPITAL letter.
-
-React can also manage states.
-
-
+# Main Notes
 ## Creating a Project
 0. Install Node.js from https://nodejs.org/en/download
 1. Navigate to your folder and open a terminal
-2. Run the command ''' npm create vite@latest '''
+2. Run the command ``` npm create vite@latest ```
 3. Pick a project name, select a framework and variant.
 4. Run the following code
-'''
+```
 cd 'project_name'
 npm install
 npm run dev
-'''
+```
 
 ## Installing React Router (to view different pages)
-1. run the following command ''' npm install react-router-dom '''
-2. Add the code ''' import {BrowserRouter} from 'react-router-dom ''' inside the main.jsx file
+1. Run the following command ```npm install react-router-dom```
+2. Add the code ``` import {BrowserRouter} from 'react-router-dom ``` inside the main.jsx file
 3. Wrap the <App /> inside a <BrowserRouter>
-4. Add the code ''' import {Routes, Route} from "react-router-dom" ''' inside the App.jsx file
+4. Add the code ``` import {Routes, Route} from "react-router-dom" ``` inside the App.jsx file
 5. Add the different Route inside the App.jsx file, e.g.
-'''
+```
 function App() {
   return (
     <main className="main-content">
@@ -42,7 +40,7 @@ function App() {
     </main>
   );
 }
-'''
+```
 
 ## Applying for API Key for TMDB
 1. Create an account under https://www.themoviedb.org
@@ -50,10 +48,12 @@ function App() {
 3. Modify the API_KEY value inside the file src/services/api.js
 
 ## Other Notes
+- Everything revolves around "components" that are modular. That can be reused and combined!
+- Component here means ANY function in JavaScript that returns some kind of JSX code, always start with a CAPITAL letter.
 - Most codes we will be concerned is inside the src folder
 - Edit .jxs files for your code!
 - Conditional rendering
-'''
+```
 function App(){
     const movieNumber = 1;
 
@@ -77,8 +77,8 @@ function App(){
         </>
     )
 }
+```
 
-'''
 - use 'useState' to ensure that variable changes persist even after a page is re-rendered
 - when a state change occurs, the ENTIRE component are re ran / re-rendered
 (check if this applies to ALL components, or just components that are dependent on said state)
